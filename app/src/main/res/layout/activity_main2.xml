@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/cardview_dark_background">
+
+
+    <LinearLayout
+        android:layout_width="356dp"
+
+        android:layout_height="674dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <!-- EditText for single-line input -->
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:hint="Number Of Fibbonacci Numbers"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textSize="18sp"
+
+            />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/animated_button_background"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round"
+            android:gravity="top"
+            android:hint="Please Wait..."
+            android:editable="false"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="20"
+            android:padding="16dp"
+            android:scrollHorizontally="true"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/animated_button_background"
+            android:text="Next--->"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
